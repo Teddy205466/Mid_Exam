@@ -58,7 +58,7 @@ $row = $result->fetch_assoc();
 </head>
 <body>
 <div class="container">
-    <h2>✏️ Update Student</h2>
+    <h2> Update Student</h2>
     <form method="POST">
         <input type="text" name="student_no" value="<?= $row['student_no'] ?>" required><br>
         <input type="text" name="fullname" value="<?= $row['fullname'] ?>" required><br>
@@ -76,7 +76,7 @@ $row = $result->fetch_assoc();
         $em = $_POST['email'];
         $ct = $_POST['contact'];
         $conn->query("UPDATE students SET student_no='$sn', fullname='$fn', branch='$br', email='$em', contact='$ct' WHERE id=$id");
-        echo "<p style='color:#00ff99;font-weight:bold;'>✅ Student updated successfully!</p>";
+        echo "<p style='color:#00ff99;font-weight:bold;'> Student updated successfully!</p>";
     }
     ?>
 </div>

@@ -55,7 +55,7 @@ $row = $result->fetch_assoc();
 </head>
 <body>
 <div class="container">
-    <h2>⚠️ Delete Student</h2>
+    <h2> Delete Student</h2>
     <p>Are you sure you want to delete <b><?= $row['fullname'] ?></b> (<?= $row['student_no'] ?>)?</p>
     <form method="POST">
         <button type="submit" name="confirm">Yes, Delete</button>
@@ -64,7 +64,7 @@ $row = $result->fetch_assoc();
     <?php
     if (isset($_POST['confirm'])) {
         $conn->query("DELETE FROM students WHERE id=$id");
-        echo "<p style='color:#00ff88;font-weight:bold;'>🗑️ Student deleted successfully!</p>";
+        echo "<p style='color:#00ff88;font-weight:bold;'> Student deleted successfully!</p>";
     }
     ?>
 </div>

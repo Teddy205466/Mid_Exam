@@ -56,7 +56,7 @@
 </head>
 <body>
 <div class="container">
-    <h2>➕ Add Student</h2>
+    <h2> Add Student</h2>
     <form method="POST">
         <input type="text" name="student_no" placeholder="Student Number" required><br>
         <input type="text" name="fullname" placeholder="Full Name" required><br>
@@ -77,9 +77,9 @@
         $sql = "INSERT INTO students (student_no, fullname, branch, email, contact)
                 VALUES ('$sn','$fn','$br','$em','$ct')";
         if ($conn->query($sql)) {
-            echo "<p class='success'>✅ Student added successfully!</p>";
+            echo "<p class='success'> Student added successfully!</p>";
         } else {
-            echo "<p class='error'>❌ Error: " . $conn->error . "</p>";
+            echo "<p class='error'> Error: " . $conn->error . "</p>";
         }
     }
     ?>

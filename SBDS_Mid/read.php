@@ -48,7 +48,7 @@
 </head>
 <body>
 <div class="container">
-    <h2>📋 Student Records</h2>
+    <h2> Student Records</h2>
     <a href="create.php">➕ Add New Student</a>
     <table>
         <tr>
@@ -65,8 +65,8 @@
                     <td>{$row['email']}</td>
                     <td>{$row['contact']}</td>
                     <td>
-                        <a href='update.php?id={$row['id']}'>✏️ Edit</a> |
-                        <a href='delete.php?id={$row['id']}'>🗑️ Delete</a>
+                        <a href='update.php?id={$row['id']}'> Edit</a> |
+                        <a href='delete.php?id={$row['id']}'> Delete</a>
                     </td>
                  </tr>";
         }
